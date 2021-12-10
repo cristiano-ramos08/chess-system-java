@@ -1,5 +1,7 @@
 package boardgame;
 
+import chess.Color;
+
 public abstract class Piece {
 
 	protected Position position;
@@ -13,6 +15,7 @@ public abstract class Piece {
 	protected Board getBoard() {
 		return board;
 	}
+	
 	public abstract boolean [][] possibleMoves();
 	
 	public boolean possibleMove(Position position) {
